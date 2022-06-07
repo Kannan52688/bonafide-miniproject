@@ -1,0 +1,105 @@
+<html lang="en">
+<head>
+    <title>Login Your Account</title>
+    <style>
+
+body{
+    background-image: url("background.jpg");
+    height: 100%;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+}
+        .vv{
+    float:left;
+    font-size: 35px;
+    text-align: center;
+    text-decoration: underline;
+    text-decoration-color:rgb(245, 67, 218) ;
+}
+.k2{
+    border-style: solid;
+    border-color: brown;
+    border-radius: 5px;
+
+}
+#k1{
+    margin: 500px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border: 5px double rgb(87, 86, 86);
+    border-radius: 10px;
+    padding: 10px;
+    background-image: url("simple\ background.webp");
+    background-size: cover;
+}
+#a3{
+    padding-left:8px ;
+    padding-right:90px;
+}
+input{
+    margin: 10px;
+    padding: 10px;
+    border-radius: 3px;
+}
+.hh{
+    padding-left: 20px;
+    padding-right: 20px;
+    color: aliceblue;
+    background:rgb(98, 163, 223);
+    font-size: 16pxpx;  
+    margin-left: 30px;
+}
+
+
+    </style>
+</head>
+<body>
+<div id="k1">
+  <p class="vv" style="color: dodgerblue;">L</p><p class="vv" style="color: rgb(255, 30, 30);">O</p><p class="vv" style="color: rgb(255, 214, 30);">G</p><p class="vv" style="color: dodgerblue;">I</p><p class="vv" style="color: rgb(4, 136, 44);">N</p>
+<br><br><br><br><br>
+ <div class="k2">
+<center><h2>STUDENTS</h2></center>
+       
+<form action="login.php" method="post">
+   <center><table style="padding: 10p;">
+       <tr><td>
+        <label style="font-size: 20px;">Register Number</label>
+        </td>
+        <td>:
+        <input id="a1" type="text" name="uname" placeholder="Register number"/>
+        </td>
+       </tr>
+       <tr><td>
+        <label style="font-size: 20px;">Password</label>
+        </td>
+        <td>:
+        <input id="a4" type="password" name="password" placeholder="Password"/>
+        </td>
+        </tr>
+    </table> </center>
+        <center><input class="hh" type="submit" value="Next" ></center>
+        </form>
+</div>
+<br>
+<div class="k2">
+    <center><h2>TEACHERS</h2></center>
+           
+    <form action="teacher.php" method="post">
+       <center><table>
+         <tr>
+             <td><label style="font-size: 20px;">Teachers id</label></td>
+             <td>:<input id="a1" type="text" name="uname" placeholder="Teachers Id"/></td>
+         </tr>  
+         <tr>
+             <td>   <label style="font-size: 20px;">Password</label></td>
+             <td>:<input id="a4" type="password" name="password" placeholder="Password"/></td>
+         </tr>       
+     
+    </table></center>
+            <center><input class="hh" type="submit" value="Next" onclick="kn()" style="text-align: left;"></center>
+            </form>
+    </div>
+</div>
+</body>
+</html>

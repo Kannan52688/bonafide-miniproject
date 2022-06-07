@@ -1,0 +1,94 @@
+<html>
+    <head>
+        <title>bonafide form</title>
+        <style>
+            body{
+                background-image: url("bg\ image.jpg");
+                background-size: cover;
+            }
+            #a1{
+                background-color: aqua;
+                margin: 500px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 5px double rgb(87, 86, 86);
+    border-radius: 10px;
+    padding: 10px;
+            }
+            #a2{
+                background-image: url("simple\ background.webp");
+                background-size: cover;
+                margin: 400px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    border: 5px double rgb(87, 86, 86);
+    border-radius: 10px;
+    padding: 10px;
+            }
+            input,select{
+                padding: 5px;
+                width: 300px;
+                border-radius: 5px;
+                
+            }
+           
+            td{
+                padding: 20px;
+            }
+            #a3{
+                background-color: blanchedalmond;
+                width: 90px;
+                padding: 10px;
+                border-radius: 8px;
+            }
+            textarea{
+                padding: 10px;
+                border-radius: 8px;
+            }
+
+        </style>
+    </head>
+    <body>
+        <center><h1 id="a1">Bonafide Application Form</h1></center>
+        <div id="a2">
+        <form action="form.php" method="post">
+            <center><table>
+                <tr>
+                    <td><label>NAME</label></td>
+                    <td>: <input type="text" size="35" name="stname" required><br></td>
+                </tr>
+                <tr>
+                    <td><label>REGISTER NUMBER</label></td>
+                    <td>: <input type="text" size="35" name="regnum" required><br></td>
+                </tr>
+                <tr>
+                    <td><label>DEPARTMENT</label></td>
+                    <td>: <select name="dept">
+                        <option value="Computer Science and Engineering">Computer Science and Engineering</option>
+                        <option value="Mechanical Engineering">Mechanical Engineering</option>
+                        <option value="Civil Engineering">Civil Engineering</option>
+                        <option value="Electrical and Electronical Engineering">Electrical and Electronical Engineering</option>
+                        <option value="Electronics and Communication Engineering">Electronics and Communication Engineering</option>
+                    </select><br></td>
+                </tr>
+                <tr>
+                    <td><label>YEAR</label></td>
+                    <td>: <select name="year">
+                        <option value="I year">I</option>
+                        <option value="II year">II</option>
+                        <option value="III year">III</option>
+                        <option value="IV year">IV</option>
+                    </select><br></td>
+                </tr>
+                <tr>
+                    <td><label>COLLEGE NAME</label></td>
+                    <td>: <input type="text" name="clgname" value="Government College of Engineering Thanjavur" readonly size="35"></td>
+                </tr>
+            <tr>
+                <td colspan="2" style="text-align: right;"><input type="submit"  id="a3"></td>
+            </tr>
+        </table></center>
+        </form>
+        </div>
+    </body>
+</html>
